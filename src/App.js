@@ -1,26 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import Events from './components/events/Events';
+import AddEvent from './components/events/AddEvent';
+import EditEvent from './components/events/EditEvent';
+import Header from './components/layout/Header';
+import About from './components/pages/About';
+import { Provider } from './context';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import NotFound from './components/pages/NotFound';
+import Test from './components/test/Test';
+
+class App extends Component {
+  render() {
+    return (
+      <Provider>
+        <Router>
+          <div className="App" >
+            <Header branding="Event Manager" />
+            <div className="container">
+              <Switch>
+                <Route exact path="/" component={Events} />
+                <Route exact path="/event/add" component={AddEvent} />
+                <Route exact path="/event/edit/:id" component={EditEvent} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/test" component={Test} />
+                <Route component={NotFound} />
+
+              </Switch>
+            </div>
+          </div>
+        </Router>
+      </Provider>
+    );
+  }
 }
+
 
 export default App;
