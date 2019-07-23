@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/eventmanager/static/css/main.65938976.chunk.css",
+    "main.js": "/eventmanager/static/js/main.6da257f8.chunk.js",
+    "main.js.map": "/eventmanager/static/js/main.6da257f8.chunk.js.map",
+    "runtime~main.js": "/eventmanager/static/js/runtime~main.7f8e44f8.js",
+    "runtime~main.js.map": "/eventmanager/static/js/runtime~main.7f8e44f8.js.map",
+    "static/css/2.266e55a5.chunk.css": "/eventmanager/static/css/2.266e55a5.chunk.css",
+    "static/js/2.71ddfead.chunk.js": "/eventmanager/static/js/2.71ddfead.chunk.js",
+    "static/js/2.71ddfead.chunk.js.map": "/eventmanager/static/js/2.71ddfead.chunk.js.map",
+    "index.html": "/eventmanager/index.html",
+    "precache-manifest.bf67d9a92e5f57809004c1b78f4e403f.js": "/eventmanager/precache-manifest.bf67d9a92e5f57809004c1b78f4e403f.js",
+    "service-worker.js": "/eventmanager/service-worker.js",
+    "static/css/2.266e55a5.chunk.css.map": "/eventmanager/static/css/2.266e55a5.chunk.css.map",
+    "static/css/main.65938976.chunk.css.map": "/eventmanager/static/css/main.65938976.chunk.css.map"
+  }
+}
